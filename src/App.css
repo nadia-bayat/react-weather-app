@@ -1,5 +1,4 @@
-body {
-  background-image: url("weather.jpg");
-  background-attachment: fixed;
-  background-size: cover;
+.App {
+  max-width: 600px;
+  margin: auto;
 }

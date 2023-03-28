@@ -2,7 +2,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .Weather-app-wrapper {
-  max-width: 600px;
   margin: 30px auto;
   margin-bottom: 0px;
 }
@@ -52,4 +51,15 @@ a {
   position: relative;
   font-size: 14px;
   top: -16px;
+}
+.weather-forecast {
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  color: #2c4b72;
+}
+.weather-forecast-temperatures {
+  font-size: 15px;
+  color: #2c4b72;
 }
