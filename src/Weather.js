@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import { RotatingLines } from "react-loader-spinner";
 import "./Weather.css";
 export default function Weather(props) {
@@ -7,7 +8,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       loaded: true,
-      date: "March 28, 15:38",
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -44,7 +45,9 @@ export default function Weather(props) {
             </form>
             <h1 id="city">{weatherData.city}</h1>
             <ul>
-              <li id="dateTime">{weatherData.date}</li>
+              <li id="dateTime">
+                <FormattedDate date={weatherData.date} />
+              </li>
               <li className="description">{weatherData.description}</li>
             </ul>
             <div className="row">
