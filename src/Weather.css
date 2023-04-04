@@ -54,14 +54,17 @@ a {
   font-size: 14px;
   top: -16px;
 }
-.weather-forecast {
+.WeatherForecast {
   text-align: center;
 }
-.weather-forecast-date {
+.WeatherForecastDay {
   font-size: 16px;
   color: #2c4b72;
 }
-.weather-forecast-temperatures {
+.WeatherForecastTemperatureMin {
+  opacity: 0.6;
+}
+.WeatherForecastTemperatures {
   font-size: 15px;
   color: #2c4b72;
 }
